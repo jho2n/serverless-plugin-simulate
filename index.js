@@ -34,6 +34,8 @@ class Simulate {
     this.serverless = serverless
     this.options = options
     this.simulateConfig = customConfig.simulate || {}
+    this.options['lambda-port'] = this.options['lambda-port'] || this.simulateConfig.lambdaPort;
+    this.options.port = this.options.port || this.simulateConfig.port;
     this.dist = this.simulateConfig.dist ? `/${this.simulateConfig.dist}` : ''
 
     Object.assign(
@@ -186,7 +188,7 @@ class Simulate {
   lambda() {
     const defaultDbPath = path.join(this.serverless.config.servicePath, '.sls-simulate-registry')
 
-    const port = this.options.port || 4000
+    const port = this.options['lambda-port'] || 4000
     const dbPath = this.options['db-path'] || defaultDbPath
 
     const logger = this.createLogger()
