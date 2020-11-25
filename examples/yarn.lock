@@ -108,10 +108,11 @@ basic-auth@~1.1.0:
   resolved basic-auth-1.1.0.tgz#45221ee429f7ee1e5035be3f51533f1cdfd29884
 
 bl@^1.0.0:
-  version "1.2.0"
-  resolved bl-1.2.0.tgz#1397e7ec42c5f5dc387470c500e34a9f6be9ea98
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/bl/-/bl-1.2.3.tgz#1e8dd80142eac80d7158c9dccc047fb620e035e7"
   dependencies:
-    readable-stream "^2.0.5"
+    readable-stream "^2.3.5"
+    safe-buffer "^5.1.1"
 
 bluebird@^3.4.0, bluebird@^3.4.1, bluebird@^3.4.6:
   version "3.5.0"
@@ -142,10 +143,6 @@ brace-expansion@^1.0.0:
 buffer-crc32@^0.2.1, buffer-crc32@~0.2.3:
   version "0.2.13"
   resolved buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242
-
-buffer-shims@^1.0.0:
-  version "1.0.0"
-  resolved buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51
 
 buffer@4.9.1:
   version "4.9.1"
@@ -253,7 +250,7 @@ cookiejar@2.0.6:
 
 core-util-is@~1.0.0:
   version "1.0.2"
-  resolved core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7
+  resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
 cors@^2.8.1:
   version "2.8.1"
@@ -649,6 +646,10 @@ inherits@2, inherits@2.0.3, inherits@~2.0.1:
   version "2.0.3"
   resolved inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de
 
+inherits@~2.0.3:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+
 ini@~1.3.0:
   version "1.3.4"
   resolved ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e
@@ -697,7 +698,7 @@ isarray@0.0.1:
 
 isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
-  resolved isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
 jison-lex@0.2.x:
   version "0.2.1"
@@ -963,9 +964,9 @@ prepend-http@^1.0.1:
   version "1.0.4"
   resolved prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc
 
-process-nextick-args@~1.0.6:
-  version "1.0.7"
-  resolved process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3
+process-nextick-args@~2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
 
 proxy-addr@~1.1.3:
   version "1.1.3"
@@ -1020,16 +1021,16 @@ readable-stream@1.0.27-1:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@^2.0.0, readable-stream@^2.0.5:
-  version "2.2.5"
-  resolved readable-stream-2.2.5.tgz#a0b187304e05bab01a4ce2b4cc9c607d5aa1d606
+readable-stream@^2.0.0, readable-stream@^2.0.5, readable-stream@^2.3.5:
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
   dependencies:
-    buffer-shims "^1.0.0"
     core-util-is "~1.0.0"
-    inherits "~2.0.1"
+    inherits "~2.0.3"
     isarray "~1.0.0"
-    process-nextick-args "~1.0.6"
-    string_decoder "~0.10.x"
+    process-nextick-args "~2.0.0"
+    safe-buffer "~5.1.1"
+    string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
 reduce-component@1.0.1:
@@ -1060,9 +1061,13 @@ rimraf@^2.2.8:
   dependencies:
     glob "^7.0.5"
 
-safe-buffer@^5.0.1:
-  version "5.0.1"
-  resolved safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7
+safe-buffer@^5.0.1, safe-buffer@^5.1.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+
+safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
 
 sax@1.1.5, sax@>=0.6.0:
   version "1.1.5"
@@ -1109,9 +1114,9 @@ serve-static@1.12.1:
     parseurl "~1.3.1"
     send "0.15.1"
 
-serverless-plugin-simulate@^0.0.11:
-  version "0.0.11"
-  resolved serverless-plugin-simulate-0.0.11.tgz#8a0272db40cba7bf3a39f4fb96db5a7d8ba1ca44
+serverless-plugin-simulate@^0.0.17:
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-simulate/-/serverless-plugin-simulate-0.0.17.tgz#bb2748dca53ad21b6d74708d0199d7d0da4fe1bf"
   dependencies:
     bluebird "^3.4.6"
     body-parser "^1.15.2"
@@ -1196,6 +1201,12 @@ steno@^0.4.1:
 string_decoder@~0.10.x:
   version "0.10.31"
   resolved string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94
+
+string_decoder@~1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
+  dependencies:
+    safe-buffer "~5.1.0"
 
 strip-ansi@^3.0.0:
   version "3.0.1"
@@ -1330,7 +1341,7 @@ url@0.10.3:
 
 util-deprecate@~1.0.1:
   version "1.0.2"
-  resolved util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf
+  resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
 utils-merge@1.0.0:
   version "1.0.0"
